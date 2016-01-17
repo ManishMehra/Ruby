@@ -1,16 +1,13 @@
-puts "Hi"
-doc = gets.chomp
+# This program will find "hello" and replace it with "removed"
 
-puts "hello"
-rem = gets .chomp
-
-target = doc.split(":")
-
-target.each do |a_word|
-	if a_word != rem
-	print a_word + (".")
-	else print "REMOVED"
-	end
-  end
-$end
-sleep 10
+puts "Start writing your document"
+puts ":"
+document = gets.chomp
+splitted = document.split(" ")
+splitted.each {|x| 
+if ((x != "hello") )
+    print x + " "
+else
+    print "removed "
+end
+}
